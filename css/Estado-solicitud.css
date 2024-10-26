@@ -9,9 +9,26 @@
 
 body {
     font-family: Arial, sans-serif;
-    height: 2000px;
+    height: 100px;
     margin: 0%;
 }
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Esto asegura que el contenedor ocupe al menos el 100% de la altura de la ventana */
+    }
+
+    .main {
+        flex: 1; /* Esto hace que el contenido principal ocupe el espacio disponible */
+        padding: 8rem; /* Mantén tu padding existente */
+    }
+
+    .footer {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: #3B5DAC;
+        padding: 1rem 0; /* Ajusta el padding según sea necesario */
+    }
 
 .logo-nav-contenedor nav img {
     max-width: 80px; /* La imagen no será más ancha que su contenedor */
@@ -128,8 +145,3 @@ button {
 }
 
 
-.footer {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    background-color: #3B5DAC;
-}

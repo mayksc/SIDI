@@ -1,24 +1,52 @@
-body::before {
-    content: "";
-    position: absolute;
-    inset: 40% -60% 0 -60%;
-    opacity: 0.3;
-    pointer-events: none;
-}
-
-nav {
-    position: relative;
-    z-index: 1;
-}
-
-nav ul {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 40px;
+    padding: 20px;
 }
 
-nav.before .active-element {
-    transform: rotateY(180deg);
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
